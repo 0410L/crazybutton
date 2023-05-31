@@ -1,11 +1,16 @@
 
 #boton-yes {
   background-color: green;
+  position: absolute;
+  left: 48%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
+
 #boton-no {
   background-color: red;
   position: absolute;
-  left: 50%;
+  right: 48%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
