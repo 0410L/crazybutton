@@ -1,11 +1,161 @@
-
 #boton-yes {
-  background-color: green;
-}
-#boton-no {
-  background-color: red;
+  background-color: rgb(238, 0, 0);
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top:64%;
+  left: 50%; /* Posiciona el botón en el centro horizontal */
+  transform: translateX(-50%); /* Centra el botón en relación con su propio ancho */
 }
+
+#boton-no {
+  background-color: rgb(3, 173, 32);
+  position: absolute;
+  top:56%;
+  left: 50%; /* Posiciona el botón en el centro horizontal */
+  transform: translateX(-50%); /* Centra el botón en relación con su propio ancho */
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.centertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.centerimg {
+  position: absolute;
+  top:30%;
+  left: 50%; /* Posiciona el botón en el centro horizontal */
+  transform: translateX(-50%); /* Centra el botón en relación con su propio ancho */
+}
+
+
+.centerbutt {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  align-items: center;
+  text-align: center;
+}
+
+
+
+  .word {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 1.4rem;
+    /* text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324; */
+  }
+
+
+  body {
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(216, 255, 42, 0.5), rgba(165, 128, 8, 0.5)), url('/src/background.avif');
+    background-size: 60px;
+    animation: move 60s infinite linear;
+    overflow: hidden;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 75% 100%;
+    }
+  }
+  
+
+
+  
+  /* @media screen and (max-width: 800px) {
+    #boton-yes {
+      top: 60%;
+    }
+  
+    #boton-no {
+      top: 54%;
+    }
+  
+    .lorem-text {
+      top: 35%;
+    }
+
+    .centertext {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      text-align: center;
+    }
+    
+
+  }
+  
+
+
+
+
+  @media screen and (max-width: 468px) {
+    #boton-yes {
+      top: 64%;
+    }
+  
+    #boton-no {
+      top: 56%;
+    }
+  
+    .lorem-text {
+      top: 35%;
+    }
+
+    .centertext {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      text-align: center;
+    }
+    
+
+  } */
+
+  
+  @media screen and (min-height: 2000px) {
+    #boton-yes {
+      top: 64%;
+    }
+  
+    #boton-no {
+      top: 56%;
+    }
+  
+    .lorem-text {
+      top: 35%;
+    }
+
+    .centertext {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      text-align: center;
+    }
+    
+
+  }
+  
+  
