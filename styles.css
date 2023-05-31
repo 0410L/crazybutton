@@ -16,6 +16,7 @@
   transform: translateX(-50%); 
   
   box-shadow: 0px 0px 10px rgba(255, 181, 20, 0.911);
+  z-index: 3;
 }
 
 /* .zoom{
