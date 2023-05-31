@@ -14,6 +14,11 @@
   transform: translateX(-50%); /* Centra el botón en relación con su propio ancho */
 }
 
+/* .zoom{
+  zoom: 2;
+} */
+
+
 .center {
   display: flex;
   flex-direction: column;
@@ -64,8 +69,6 @@
     background-size: 60px;
     animation: move 60s infinite linear;
     overflow: hidden;
-    transform: scale(1.5);
-    zoom: 1;
   }
   
   @keyframes move {
@@ -80,47 +83,16 @@
 
 
   
-   /* @media screen and (max-width: 800px) {
-    #boton-yes {
-      top: 60%;
-    }
-  
-    #boton-no {
-      top: 54%;
-    }
-  
-    .lorem-text {
-      top: 35%;
+  @media screen and (max-width: 920px) {
+    .zoom{
+      zoom: 0;
     }
 
-    .centertext {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 70vh;
-      text-align: center;
-    }
-    
-
-  } */
+  }
+  
   
 
 
-
-
-  @media screen and (max-width: 468px) {
-
-    body {
-      zoom: 1;
-      -moz-transform: scale(1); /* Firefox */
-      -ms-transform: scale(1); /* IE */
-      -webkit-transform: scale(1); /* Safari y Chrome */
-      transform: scale(1.5);
-    }
-    
-
-  } 
 
   
   @media screen and (min-height: 2000px) {
@@ -130,10 +102,6 @@
   
     #boton-no {
       top: 56%;
-    }
-  
-    .lorem-text {
-      top: 35%;
     }
 
     .centertext {
