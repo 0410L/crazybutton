@@ -64,6 +64,8 @@
     background-size: 60px;
     animation: move 60s infinite linear;
     overflow: hidden;
+    transform: scale(1.5);
+    zoom: 1;
   }
   
   @keyframes move {
@@ -78,7 +80,7 @@
 
 
   
-  /* @media screen and (max-width: 800px) {
+   /* @media screen and (max-width: 800px) {
     #boton-yes {
       top: 60%;
     }
@@ -101,36 +103,24 @@
     }
     
 
-  }
+  } */
   
 
 
 
 
   @media screen and (max-width: 468px) {
-    #boton-yes {
-      top: 64%;
-    }
-  
-    #boton-no {
-      top: 56%;
-    }
-  
-    .lorem-text {
-      top: 35%;
-    }
 
-    .centertext {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 70vh;
-      text-align: center;
+    body {
+      zoom: 1;
+      -moz-transform: scale(1); /* Firefox */
+      -ms-transform: scale(1); /* IE */
+      -webkit-transform: scale(1); /* Safari y Chrome */
+      transform: scale(1.5);
     }
     
 
-  } */
+  } 
 
   
   @media screen and (min-height: 2000px) {
